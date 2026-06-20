@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repositorio GitHub</title>
+    <title>Plantilla de Merge en GitHub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,54 +62,84 @@
 </head>
 <body>
     <header>
-        <h1>Nombre del Proyecto</h1>
-        <p>Descripción breve del repositorio y su propósito.</p>
+        <h1>Plantilla para enseñar merge en GitHub</h1>
+        <p>Usa esta página para practicar ramas, pull requests y merge colaborativo.</p>
     </header>
 
     <nav>
         <a href="#about">Acerca</a>
-        <a href="#features">Características</a>
-        <a href="#usage">Uso</a>
-        <a href="#contributing">Contribuir</a>
-        <a href="#license">Licencia</a>
+        <a href="#github-pages">GitHub Pages</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#activity">Actividad</a>
+        <a href="#instructions">Instrucciones</a>
     </nav>
 
     <main>
         <section id="about">
             <h2>Acerca</h2>
-            <p>Este repositorio contiene el código fuente para un proyecto de ejemplo en GitHub. Aquí puedes encontrar documentación, ejemplos de uso y pautas para contribuir.</p>
+            <p>Esta página es una plantilla para una clase práctica de GitHub. Cada participante puede subir cambios a <code>home.html</code>, abrir un pull request y ver cómo se realiza el merge.</p>
         </section>
 
-        <section id="features">
-            <h2>Características</h2>
+        <section id="github-pages">
+            <h2>GitHub Pages</h2>
+            <p>Para publicar este repositorio en GitHub Pages, activa Pages en la rama <code>main</code> y usa la raíz del repositorio.</p>
+            <p>Este repositorio incluye un <code>index.html</code> que redirige automáticamente a <code>home.html</code>, para que tu página sea visible desde la URL de Pages.</p>
+        </section>
+
+        <section id="workflow">
+            <h2>Workflow de merge</h2>
+            <ol>
+                <li>Clona el repositorio.</li>
+                <li>Actualiza <code>main</code> y crea una rama nueva.</li>
+                <li>Modifica <code>home.html</code> con tu contribución.</li>
+                <li>Haz commit y sube tu rama al remoto.</li>
+                <li>Abre un pull request y pide revisión.</li>
+                <li>Haz merge una vez aprobado.</li>
+            </ol>
+        </section>
+
+        <section id="activity">
+            <h2>Actividad colaborativa</h2>
+            <p>Cada persona debe hacer cambios en <code>home.html</code> y documentar brevemente qué aportó. Algunas ideas:</p>
             <ul>
-                <li>Plantilla HTML sencilla y funcional.</li>
-                <li>Estructura clara para documentación.</li>
-                <li>Fácil de adaptar a proyectos personales.</li>
+                <li>Añadir una breve explicación sobre Git o GitHub.</li>
+                <li>Escribir un consejo para resolver conflictos.</li>
+                <li>Describir cómo se revisa un pull request.</li>
             </ul>
         </section>
 
-        <section id="usage">
-            <h2>Uso</h2>
-            <p>Para ver el proyecto, abre el archivo <code>home.html</code> en tu navegador.</p>
-            <pre><code>git clone https://github.com/usuario/repositorio.git
-cd repositorio
-open home.html</code></pre>
+        <section id="instructions">
+            <h2>Instrucciones</h2>
+            <p>Usa estos comandos para trabajar en Git:</p>
+            <pre><code>git checkout main
+git pull origin main
+git checkout -b mi-rama-nombre
+# edita home.html
+git add home.html
+git commit -m "Añade mi contribución a home.html"
+git push -u origin mi-rama-nombre</code></pre>
+            <p>Luego crea un pull request en GitHub y describe tus cambios.</p>
+            <p>Al hacer merge, tu contribución aparecerá en el sitio de GitHub Pages.</p>
         </section>
 
-        <section id="contributing">
-            <h2>Contribuir</h2>
-            <p>Para contribuir al repositorio, crea un fork, realiza tus cambios y envía un pull request. Asegúrate de seguir las normas de estilo y añadir documentación cuando sea necesario.</p>
+        <section id="history">
+            <h2>Historial de cambios</h2>
+            <p>Registra aquí cada contribución visible en la página. Cada colaborador puede agregar su entrada con fecha y descripción.</p>
+            <ul>
+                <li><strong>2026-06-20</strong> - Plantilla inicial creada y sección de GitHub Pages añadida. (Autor: Instructor)</li>
+                <li><strong>2026-06-21</strong> - Sección de historial de cambios agregada. (Autor: Alumno/a)</li>
+            </ul>
+            <p>Cuando cada persona haga su pull request, puede añadir su propia línea a esta lista para que se vea el historial en la página.</p>
         </section>
 
-        <section id="license">
-            <h2>Licencia</h2>
-            <p>Este proyecto está bajo la licencia MIT. Consulta el archivo <code>LICENSE</code> para más detalles.</p>
+        <section id="notes">
+            <h2>Notas</h2>
+            <p>Trabaja en ramas separadas para que cada cambio se vea en el historial de GitHub y para poder practicar merges reales.</p>
         </section>
     </main>
 
     <footer>
-        <p>Repositorio de ejemplo en GitHub</p>
+        <p>Plantilla para practicar merge y GitHub Pages.</p>
     </footer>
 </body>
 </html>
