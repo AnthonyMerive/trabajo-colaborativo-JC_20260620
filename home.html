@@ -4,61 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantilla de Merge en GitHub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #24292f;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #0366d6;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            background: #fff;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h1, h2 {
-            margin-top: 0;
-        }
-        code {
-            background: #eef;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        pre {
-            background: #f0f0f0;
-            padding: 10px;
-            overflow-x: auto;
-            border-radius: 4px;
-        }
-        footer {
-            background: #24292f;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -70,71 +16,164 @@
         <a href="#about">Acerca</a>
         <a href="#github-pages">GitHub Pages</a>
         <a href="#workflow">Workflow</a>
-        <a href="#activity">Actividad</a>
+        <a href="#ideas">Ideas</a>
         <a href="#instructions">Instrucciones</a>
+        <a href="#history">Historial</a>
     </nav>
 
     <main>
         <section id="about">
-            <h2>Acerca</h2>
-            <p>Esta página es una plantilla para una clase práctica de GitHub. Cada participante puede subir cambios a <code>home.html</code>, abrir un pull request y ver cómo se realiza el merge.</p>
+            <h2>📖 Acerca de este proyecto</h2>
+            <p>Esta página es una <strong>plantilla interactiva para una clase práctica de Git y GitHub</strong>. Cada participante puede:</p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🌿</div>
+                    <div class="card-title">Crear Ramas</div>
+                    <div class="card-text">Practica con git checkout y branches propias</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <div class="card-title">Hacer Cambios</div>
+                    <div class="card-text">Editar este HTML y agregar tu contribución</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <div class="card-title">Pull Requests</div>
+                    <div class="card-text">Abrir PR y practicar code review</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <div class="card-title">Merge</div>
+                    <div class="card-text">Ver cómo se combinan cambios</div>
+                </div>
+            </div>
         </section>
 
         <section id="github-pages">
-            <h2>GitHub Pages</h2>
-            <p>Para publicar este repositorio en GitHub Pages, activa Pages en la rama <code>main</code> y usa la raíz del repositorio.</p>
-            <p>Este repositorio incluye un <code>index.html</code> que redirige automáticamente a <code>home.html</code>, para que tu página sea visible desde la URL de Pages.</p>
+            <h2>🌐 GitHub Pages - Publicación</h2>
+            <p>Para publicar este repositorio en <strong>GitHub Pages</strong>:</p>
+            <ol>
+                <li>Ve a <strong>Settings</strong> → <strong>Pages</strong></li>
+                <li>Selecciona la rama <code>main</code></li>
+                <li>Elige la carpeta raíz del repositorio</li>
+                <li>GitHub automáticamente publicará el sitio</li>
+            </ol>
+            <div class="info-box">
+                <strong>💡 Nota:</strong> El archivo <code>index.html</code> redirige a <code>home.html</code>, así tu página está visible desde la URL de GitHub Pages.
+            </div>
         </section>
 
         <section id="workflow">
-            <h2>Workflow de merge</h2>
+            <h2>🔄 Workflow de merge</h2>
+            <p>Sigue estos pasos para contribuir:</p>
             <ol>
-                <li>Clona el repositorio.</li>
-                <li>Actualiza <code>main</code> y crea una rama nueva.</li>
-                <li>Modifica <code>home.html</code> con tu contribución.</li>
-                <li>Haz commit y sube tu rama al remoto.</li>
-                <li>Abre un pull request y pide revisión.</li>
-                <li>Haz merge una vez aprobado.</li>
+                <li><strong>Clona</strong> el repositorio en tu máquina</li>
+                <li><strong>Actualiza</strong> main con <code>git pull origin main</code></li>
+                <li><strong>Crea rama</strong> nueva con un nombre descriptivo</li>
+                <li><strong>Modifica</strong> este archivo con tu contribución</li>
+                <li><strong>Commit</strong> tus cambios con un mensaje claro</li>
+                <li><strong>Push</strong> tu rama al repositorio remoto</li>
+                <li><strong>Abre PR</strong> desde tu rama hacia main</li>
+                <li><strong>Merge</strong> una vez que sea aprobado</li>
             </ol>
+            <div class="success-box">
+                <strong>✓ Consejo:</strong> Usa ramas separadas para que cada cambio sea visible en el historial de Git.
+            </div>
         </section>
 
-        <section id="activity">
-            <h2>Actividad colaborativa</h2>
-            <p>Cada persona debe hacer cambios en <code>home.html</code> y documentar brevemente qué aportó. Algunas ideas:</p>
-            <ul>
-                <li>Añadir una breve explicación sobre Git o GitHub.</li>
-                <li>Escribir un consejo para resolver conflictos.</li>
-                <li>Describir cómo se revisa un pull request.</li>
-            </ul>
+        <section id="ideas">
+            <h2>💡 Ideas de Contribución</h2>
+            <p>Aquí hay algunas ideas para que contribuyas a esta página:</p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <div class="card-title">Tutorial de Git</div>
+                    <div class="card-text">Explica un concepto de Git (rebase, stash, cherry-pick)</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🐛</div>
+                    <div class="card-title">Resolución de Conflictos</div>
+                    <div class="card-text">Comparte estrategias para resolver merge conflicts</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-title">Best Practices</div>
+                    <div class="card-text">Documenta mejores prácticas de branching</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <div class="card-title">Comandos Útiles</div>
+                    <div class="card-text">Compila una lista de comandos Git usados frecuentemente</div>
+                </div>
+            </div>
         </section>
 
         <section id="instructions">
-            <h2>Instrucciones</h2>
-            <p>Usa estos comandos para trabajar en Git:</p>
+            <h2>⚙️ Instrucciones de Configuración</h2>
+            <h3>1. Clonar el repositorio</h3>
+            <pre><code>git clone https://github.com/AnthonyMerive/trabajo-colaborativo-JC_20260620.git
+cd trabajo-colaborativo-JC_20260620</code></pre>
+
+            <h3>2. Crear tu rama</h3>
             <pre><code>git checkout main
 git pull origin main
-git checkout -b mi-rama-nombre
-# edita home.html
-git add home.html
-git commit -m "Añade mi contribución a home.html"
-git push -u origin mi-rama-nombre</code></pre>
-            <p>Luego crea un pull request en GitHub y describe tus cambios.</p>
-            <p>Al hacer merge, tu contribución aparecerá en el sitio de GitHub Pages.</p>
-        </section>
+git checkout -b tu-nombre-rama</code></pre>
 
+            <h3>3. Hacer cambios</h3>
+            <p>Edita este archivo <code>home.html</code> y agrega tu sección o modifica el historial.</p>
+
+            <h3>4. Subir cambios</h3>
+            <pre><code>git add home.html
+git commit -m "Agregué: descripción de tu cambio"
+git push -u origin tu-nombre-rama</code></pre>
+
+            <h3>5. Abrir Pull Request</h3>
+            <p>Ve a GitHub y abre un PR desde tu rama hacia <code>main</code>. Describe qué cambios hiciste y por qué.</p>
+
+            <div class="highlight">
+                <strong>⚠️ Recuerda:</strong> Trabaja en ramas separadas para que cada cambio se vea en el historial de GitHub y para poder practicar merges reales. Siempre trabaja en ramas separadas y nunca hagas commit directamente en main.
+            </div>
         <section id="history">
             <h2>Historial de cambios</h2>
             <p>Registra aquí cada contribución visible en la página. Cada colaborador puede agregar su entrada con fecha y descripción.</p>
             <ul>
                 <li><strong>2026-06-20</strong> - Plantilla inicial creada y sección de GitHub Pages añadida. (Autor: Instructor)</li>
-                <li><strong>2026-06-21</strong> - Sección de historial de cambios agregada. (Autor: Alumno/a)</li>
+                <li><strong>2026-06-21</strong> - Sección de historial de cambios agregada. (Autor: Wendy Chicaiza/a)</li>
             </ul>
             <p>Cuando cada persona haga su pull request, puede añadir su propia línea a esta lista para que se vea el historial en la página.</p>
         </section>
 
-        <section id="notes">
-            <h2>Notas</h2>
-            <p>Trabaja en ramas separadas para que cada cambio se vea en el historial de GitHub y para poder practicar merges reales.</p>
+        <section id="history">
+            <h2>📜 Historial de Cambios</h2>
+            <p>Registro de todas las contribuciones realizadas:</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026-06-20</div>
+                    <div class="timeline-content">
+                        <strong>Plantilla inicial</strong> - Estructura base con secciones principales. Incluye GitHub Pages setup y workflow de merge. Autor: <a href="https://github.com/AnthonyMerive" target="_blank">Anthony Merive (Instructor)</a>
+                    </div> 
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026-06-20</div>
+                    <div class="timeline-content">
+                        <strong>Mejora de UI</strong> - Redesign completo con Cards, Timeline visual, Botones mejorados y Responsive Design. <br>
+                        Autor: <a href="https://github.com/Kmlozmz" target="_blank">Camilo Pineda (Alumno)</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026-06-20</div>
+                    <div class="timeline-content">
+                        <strong>Reestructuración</strong> - Separación de CSS y JavaScript en archivos externos para mejor mantenibilidad. <br>
+                        Autor: <a href="https://github.com/Kmlozmz" target="_blank">Camilo Pineda (Alumno)</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026-06-21</div>
+                    <div class="timeline-content">
+                        <strong>Tu contribución aquí</strong> - Agrega tu nombre, fecha y descripción de qué aportaste al proyecto.
+                    </div>
+                </div>
+            </div>
         </section>
         section id="snake">
             <h2>Juego Snake</h2>
@@ -143,7 +182,10 @@ git push -u origin mi-rama-nombre</code></pre>
     </main>
 
     <footer>
-        <p>Plantilla para practicar merge y GitHub Pages.</p>
+        <p>🎓 Plantilla para practicar Git, GitHub y colaboración en equipo</p>
+        <p style="font-size: 0.9rem; margin-top: 10px;">Creado con ❤️ para la educación en control de versiones</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
